@@ -1,2 +1,4 @@
-package com.example.colculater.Model;public interface Ioperation {
+package com.example.colculater.Model;
+
+public interface IOperation {
 }

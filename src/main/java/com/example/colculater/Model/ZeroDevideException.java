@@ -1,2 +1,4 @@
-package com.example.colculater.Model;public class ZeroDevideException {
+package com.example.colculater.Model;
+
+public class ZeroDevideException extends ArithmeticException{
 }
