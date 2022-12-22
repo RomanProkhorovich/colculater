@@ -14,25 +14,25 @@ public  class Operation {
     }
 
     public  static double executeBinaryOperation(double arg1,double arg2,String operator){
-        switch (operator){
-            case("+"):{
-                return  arg1+arg2;
+        switch (operator) {
+            case ("+") -> {
+                return arg1 + arg2;
             }
-            case("-"):{
-                return arg1-arg2;
+            case ("-") -> {
+                return arg1 - arg2;
             }
-            case("*"):{
-                return arg1*arg2;
+            case ("*") -> {
+                return arg1 * arg2;
             }
-            case("/"):{
-                if (arg2==0)
+            case ("/") -> {
+                if (arg2 == 0)
                     throw new ZeroDevideException();
-                return arg1/arg2;
+                return arg1 / arg2;
             }
-            case ("^"):{
-                if (Math.abs(arg2) < 1 && (arg1<0))
+            case ("^") -> {
+                if (Math.abs(arg2) < 1 && (arg1 < 0))
                     throw new NegativeSqrtArgException();
-                return Math.pow(arg1,arg2);
+                return Math.pow(arg1, arg2);
             }
         }
         throw new ArithmeticException();
